@@ -73,7 +73,7 @@ function calculateCartPrice(...num1){
 function calculateCartPrice(val1 , val2 ,...num1){
     return  num1 ;
 }
-console.log(calculateCartPrice(200, 300, 500, 2000));
+// console.log(calculateCartPrice(200, 300, 500, 2000));
 // [ 500, 2000 ]
 
 const user =  {
@@ -87,3 +87,16 @@ function handleObject (anyObject){
 
 handleObject(user);
 // Username is akash and the price is 500
+
+handleObject({
+    username : "sam",
+    price : 399,
+})
+
+const myNewArray = [ 200, 300, 400, 600]
+function returnSecondValue (getArray){
+    return getArray[1];
+}
+
+console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([200, 300, 400, 600]));
